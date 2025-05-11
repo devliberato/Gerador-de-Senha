@@ -10,11 +10,11 @@ html, body {
     height: auto;
     min-height: 100vh;
 }
-
 html {
-    background: linear-gradient(180deg, rgba(234, 2, 255, 1) 0%, #0097ff 100%);
-
+    background: linear-gradient(180deg, #b185f9 0%, #6fd3ff 100%);
 }
+
+
 
 
 input:focus {
@@ -31,7 +31,7 @@ input:focus {
 }
 
 #register-banner {
-    background: url(../img/bg-form.jpg);
+    background: url(../img/womanlaptop.jpg);
    background-size: cover;
    background-position: center;
    width: 50%;
@@ -93,13 +93,13 @@ font-size: 0.8rem;
     padding: 0.6rem 0;
 }
 
-#generate-password {
+#open-generate-password {
     font-weight: bold;
     cursor: pointer;
     transition: 0.4s;
 }
 
-#generate-password:hover {
+#open-generate-password:hover {
    color: #0099ff;
 }
 
@@ -120,7 +120,8 @@ font-size: 0.8rem;
     margin-bottom: 0.5rem;
 }
 
-#register-form input[type="submit"] {
+#register-form input[type="submit"],
+#generate-options button, #copy-password{
     background-color: #81d348;
     color: #fff;
     opacity: 0.8;
@@ -135,4 +136,61 @@ font-size: 0.8rem;
 
 #register-form input[type="submit"]:hover {
     opacity: 1;
+}
+
+/*add nova função */
+
+#generate-options {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+#generate-options .form-control {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#generate-options label {
+    font-size: 0.8rem;
+}
+
+#generate-options input[type="text"] {
+max-width: 30px;
+text-align: center;
+border: 1px solid #ccc;
+}
+
+#generate-options button {
+    background-color: #0097ff;
+    display: block;
+    margin: 0 auto;
+}
+
+#copy-password {
+    margin: 1rem auto;
+    background-color: transparent;
+    border: 2px solid #81d340;
+    color: #83d340;
+    padding: 0.5rem 1rem;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* Niveis de senha */
+
+.bad {
+    color: #e74c3c;
+}
+.medium {
+    color: #f39c12;
+}
+.good {
+    color: #2ecc71;
+}
+.awesome {
+    color: #27ae60;
 }

@@ -51,12 +51,36 @@
           />
         </div>
         <p>
-          Quer ajudar para criar uma senha segura?
-          <span id="generate-password">Clique aqui.</span>
+          Quer ajuda para criar uma senha segura?
+          <span id="open-generate-password">Clique aqui.</span>
         </p>
+        <div id="generate-options" class="hide">
+          <p>Selecione as opções que você deseja</p>
+          <div class="form-control">
+            <label for="length">Quantidade de caracteres:</label>
+            <input type="text" id="length" name="length" value="10" />
+          </div>
+          <div class="form-control">
+            <label for="letters">Letras:</label>
+            <input type="checkbox" id="letters" name="letters" value="10" />
+          </div>
+          <div class="form-control">
+            <label for="numbers">Números:</label>
+            <input type="checkbox" id="numbers" name="numbers" value="10" />
+          </div>
+          <div class="form-control">
+            <label for="symbols">Simbolos:</label>
+            <input type="checkbox" id="symbols" name="symbols" value="10" />
+          </div>
+          <button id="generate-password">Criar Senha</button>
+        </div>
         <div id="generated-password">
+          <div id="strength-password">
+            <h5></h5>
+          </div>
           <p>Aqui está a sua senha:</p>
           <h4></h4>
+          <button id="copy-password">Copiar</button>
         </div>
         <div class="form-control">
           <label for="confirmpassword">Confirmação de Senha</label>
